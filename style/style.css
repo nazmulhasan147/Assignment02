@@ -489,7 +489,14 @@
         max-width: 576px;
     }
     .podcast-last{
-        grid-template-columns: repeat(1 ,1fr);
+        grid-template-columns: repeat(2 ,190px);
+        gap: 15px;
+        padding-left: 5px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .info{
+        margin-bottom: 10px;
     }
     .middle{
         padding: 30px 10px 30px 10px;
