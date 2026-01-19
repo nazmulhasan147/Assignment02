@@ -10,7 +10,17 @@
   font-optical-sizing: auto;
   max-width: 1600px;
 }
-
+@keyframes bounce{
+    0%{
+        top: 80px;
+    }
+    50%{
+        bottom: 10px;
+    }
+    100%{
+        top:10px;
+    }
+}
 
 /*Shared Styles*/
 
@@ -119,6 +129,8 @@
     font-weight: 600;
     margin-bottom: 100px;
     cursor: pointer;
+    animation: bounce 3s ease-in-out 1s infinite alternate;
+    position: relative;
     
 }
 #btn-1:hover{
@@ -139,6 +151,8 @@
     background-color: transparent;
     border: 1px solid  rgba(0, 255, 136, 1) ;
     cursor: pointer;
+    animation: bounce 3s ease-in-out 2s infinite alternate;
+    position: relative;
 }
 #btn-2:hover{
     background: repeating-linear-gradient(45deg, rgb(156, 20, 20) ,rgb(42, 5, 2),rgb(6, 181, 239));
@@ -157,10 +171,12 @@
     border-radius: 18px;
     background-color: rgba(72, 251, 167, 0.955);
     cursor: pointer;
+   
+    
 }
 .new:hover{
-    background: repeating-linear-gradient(45deg, rgb(156, 20, 20) ,rgb(42, 5, 2),rgb(6, 181, 239));
-    transform: rotate(90deg);
+    background: linear-gradient(45deg,#f7e83fe9, #FB09B4,#9100F8);;
+    
 }
 
 /*About Podcast Related Design*/
